@@ -1,0 +1,7 @@
+C:\Users\dimit\source\repos\Method\BulsAndCows\bin\Debug\BulsAndCows.exe.config
+C:\Users\dimit\source\repos\Method\BulsAndCows\bin\Debug\BulsAndCows.exe
+C:\Users\dimit\source\repos\Method\BulsAndCows\bin\Debug\BulsAndCows.pdb
+C:\Users\dimit\source\repos\Method\BulsAndCows\obj\Debug\BulsAndCows.csprojAssemblyReference.cache
+C:\Users\dimit\source\repos\Method\BulsAndCows\obj\Debug\BulsAndCows.csproj.CoreCompileInputs.cache
+C:\Users\dimit\source\repos\Method\BulsAndCows\obj\Debug\BulsAndCows.exe
+C:\Users\dimit\source\repos\Method\BulsAndCows\obj\Debug\BulsAndCows.pdb
