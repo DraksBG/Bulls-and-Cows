@@ -17,12 +17,13 @@ namespace BulsAndCows
         }
 
         //static int GetBulls(int numbers, int input)
-        static void Bulls(int numbers, int input, out int bulls)
+        static int GetBulls(int numbers, int input)
         {
+            int bulls = 0;
             char[] inputString = input.ToString().ToCharArray();
             char[] secretNum = numbers.ToString().ToCharArray();
 
-            bulls = 0;
+           
             for (int i = 0; i < inputString.Length; i++)
             {
                 if (inputString[i] == secretNum[i])
@@ -32,14 +33,15 @@ namespace BulsAndCows
 
             }
             Console.WriteLine(bulls);
+            return bulls;
         }
 
         //static int GetCows(int number, int input)
-        static void Cows(int number, int input, out int cows)
+        static int GetCows(int number, int input)
         {
             char[] inputString = input.ToString().ToCharArray();
             char[] secretNum = number.ToString().ToCharArray();
-            cows = 0;
+           int  cows = 0;
             for (int i = 0; i < secretNum.Length; i++)
             {
                 for (int j = 0; j < inputString.Length; j++)
@@ -54,6 +56,7 @@ namespace BulsAndCows
                 }
             }
             Console.WriteLine(cows);
+            return cows;
         }
 
         static int GetInput()
