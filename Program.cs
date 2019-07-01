@@ -70,6 +70,10 @@ namespace BulsAndCows
         {
             bulls = GetBulls(remember,input);
             cows = GetCows(remember, input);
+            if (bulls == 4)
+            {
+                return false;   
+            }
             return true;
             
           
