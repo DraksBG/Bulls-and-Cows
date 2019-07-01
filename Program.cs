@@ -61,18 +61,26 @@ namespace BulsAndCows
 
         static int GetInput()
         {
-            throw new NotImplementedException();
+            int num = int.Parse(Console.ReadLine());
+            return num;
         }
 
         //return true if game is still running
         static bool Update(int remember, int input, out int bulls, out int cows)
         {
-            throw new NotImplementedException();
+            bulls = GetBulls(remember,input);
+            cows = GetCows(remember, input);
+            return true;
+            
+          
         }
 
         static void Draw(int bulls, int cows)
         {
-            throw new NotImplementedException();
+
+            Console.WriteLine("Numbers of Bulls is : " + bulls);
+            Console.WriteLine();
+            Console.WriteLine("Numbers of Cows is : " + cows);
         }
 
         static void Main(string[] args)
