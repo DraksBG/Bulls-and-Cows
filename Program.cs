@@ -15,6 +15,8 @@ namespace BulsAndCows
 
             return n;
         }
+
+        //static int GetBulls(int numbers, int input)
         static void Bulls(int numbers, int input, out int bulls)
         {
             char[] inputString = input.ToString().ToCharArray();
@@ -31,6 +33,8 @@ namespace BulsAndCows
             }
             Console.WriteLine(bulls);
         }
+
+        //static int GetCows(int number, int input)
         static void Cows(int number, int input, out int cows)
         {
             char[] inputString = input.ToString().ToCharArray();
@@ -52,25 +56,50 @@ namespace BulsAndCows
             Console.WriteLine(cows);
         }
 
+        static int GetInput()
+        {
+            throw new NotImplementedException();
+        }
+
+        //return true if game is still running
+        static bool Update(int remember, int input, out int bulls, out int cows)
+        {
+            throw new NotImplementedException();
+        }
+
+        static void Draw(int bulls, int cows)
+        {
+            throw new NotImplementedException();
+        }
+
         static void Main(string[] args)
         {
             int Remember = RandomNum();
             
             while (true)
             {
-                int input = int.Parse(Console.ReadLine());
-              
-                Console.WriteLine(Remember);
-                Console.WriteLine("Numbers of Bulls is : ");
-                Bulls(Remember, input, out int bulls);
-                Console.WriteLine();
-                Console.WriteLine("Numbers of Cows is :");
-                Cows(Remember, input, out int cows);
+                int input = GetInput();
+                bool gameIsRunning = Update(Remember, input, out int bulls, out int cows);
+                Draw(bulls, cows);
 
-                if (bulls == 4)
+                if(!gameIsRunning)
                 {
                     break;
                 }
+
+                //int input = int.Parse(Console.ReadLine());
+
+                //Console.WriteLine(Remember);
+                //Console.WriteLine("Numbers of Bulls is : ");
+                //Bulls(Remember, input, out int bulls);
+                //Console.WriteLine();
+                //Console.WriteLine("Numbers of Cows is :");
+                //Cows(Remember, input, out int cows);
+
+                //if (bulls == 4)
+                //{
+                //    break;
+                //}
             }
             
 
