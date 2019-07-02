@@ -14,7 +14,7 @@ namespace BulsAndCows
             while (randomList.Count < 4)
             {
                 Random a = new Random();
-                // a = new Random();
+
                 int myNumber = a.Next(1, 9);
 
                 if (!randomList.Contains(myNumber))
