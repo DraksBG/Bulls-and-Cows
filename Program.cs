@@ -10,10 +10,29 @@ namespace BulsAndCows
     {
         static int RandomNum()
         {
-            Random r = new Random();
-            int n = r.Next(1000, 9999);
 
-            return n;
+
+            Random a = new Random();
+            List<int> randomList = new List<int>();
+            int myNumber = 0;
+            myNumber = a.Next(1, 9);
+
+            while (randomList.Count < 4)
+            {
+                a = new Random();
+                myNumber = a.Next(1, 9);
+
+                if (!randomList.Contains(myNumber))
+                {
+                    randomList.Add(myNumber);
+
+                }
+            }
+
+           
+            string nums = string.Join("", randomList.ToArray());
+            int num = int.Parse(nums);
+            return num;
         }
 
         //static int GetBulls(int numbers, int input)
